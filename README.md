@@ -25,8 +25,15 @@ cluster için config oluşturuyoruz öncelikle.
 özelliklerini değiştirmek istiyorsak onları değiştiriyoruz.
 
 ```kops edit ig --name=simple.k8s.local nodes-europe-north1-a
-kops edit ig --name=simple.k8s.local master-europe-north1-a```
+kops edit ig --name=simple.k8s.local master-europe-north1-a
+```
+
 
 ve en son cluster ı kuruyoruz
 
 ```kops update cluster --name simple.k8s.local --state ${KOPS_STATE_STORE} --yes --admin```
+
+cluster kurduktan sonra kubeconfiği aşağıdaki komutlar çekeriz.
+
+kops export kubecfg simple.k8s.local --state ${KOPS_STATE_STORE} --admin
+
