@@ -1,5 +1,11 @@
 # kops-kubernetes-cluster
 
+github sayfasından release indirilir.
+
+```https://github.com/kubernetes/kops```
+
+daha sonra cloud shell üzerinden işlem yapabiliriz ya da kendi sunucunuzdan.
+
 ```gcloud auth application-default login```
 
 unique bir bucket yaratmamız gerekiyor.
