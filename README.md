@@ -14,9 +14,13 @@ unique bir bucket yaratmamız gerekiyor.
 
 cluster kurulumu için gerekli variablelar
 
-```PROJECT=`gcloud config get-value project`
+```
+PROJECT=`gcloud config get-value project`
+
 export KOPS_FEATURE_FLAGS=AlphaAllowGCE
-export KOPS_STATE_STORE=gs://my-kops-clusters-111/```
+
+export KOPS_STATE_STORE=gs://my-kops-clusters-111/
+```
 
 cluster için config oluşturuyoruz öncelikle.
 
