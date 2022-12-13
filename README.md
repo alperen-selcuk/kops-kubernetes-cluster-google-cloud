@@ -48,3 +48,16 @@ cluster kurduktan sonra kubeconfiği aşağıdaki komutlar çekeriz.
 config çektikten sonra validate edeceğiz.
 
 ```kops validate cluster --state ${KOPS_STATE_STORE}```
+
+****
+
+eğer multi node master kurmak istiyorsanız. 
+
+```
+kops create cluster \
+    --node-count 3 \
+    --master-count 3 \
+    --zones europe-north1-a,europe-north1-b \
+    --master-zones europe-north1-a,europe-north1-b \
+    hacluster.k8s.local
+```
