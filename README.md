@@ -1,10 +1,12 @@
 # kops-kubernetes-cluster
 
-github sayfasından release indirilir.
+github sayfasından kops release indirilir.
 
 ```https://github.com/kubernetes/kops```
 
-daha sonra cloud shell üzerinden işlem yapabiliriz ya da kendi sunucunuzdan.
+google üzerinde işlem yapacağımız için google cloud sdk bilgisayarınıza indirmeniz ve auth olmanız gerekmektedir.
+
+```gcloud auth login```
 
 ```gcloud auth application-default login```
 
