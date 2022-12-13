@@ -4,7 +4,9 @@ github sayfasından kops release indirilir.
 
 ```https://github.com/kubernetes/kops```
 
-google üzerinde işlem yapacağımız için google cloud sdk bilgisayarınıza indirmeniz ve auth olmanız gerekmektedir.
+google üzerinde işlem yapacağımız için google cloud sdk bilgisayarınıza indirmeniz ve auth olmanız gerekmektedir. 
+
+https://cloud.google.com/sdk/docs/install-sdk
 
 ```gcloud auth login```
 
