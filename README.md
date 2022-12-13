@@ -28,7 +28,7 @@ cluster için config oluşturuyoruz öncelikle.
 
 ```kops create cluster simple.k8s.local --node-count 3 --zones europe-north1-a --state ${KOPS_STATE_STORE}/ --project=${PROJECT}```
 
-özelliklerini değiştirmek istiyorsak onları değiştiriyoruz. özellikle master node un yüksek cpulu makina olmasına özen gösterin.
+özelliklerini değiştirmek istiyorsak onları değiştiriyoruz. özellikle master node un yüksek cpulu makina olmasına özen gösterin. en az n2-standart-2 olması lazım, yoksa masterda bazı podlar ayağa kalkmıyor.
 
 ```
 kops edit ig --name=simple.k8s.local nodes-europe-north1-a
