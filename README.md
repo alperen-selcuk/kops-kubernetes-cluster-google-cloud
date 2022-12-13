@@ -21,8 +21,6 @@ cluster kurulumu için gerekli variablelar
 ```
 PROJECT=`gcloud config get-value project`
 
-export KOPS_FEATURE_FLAGS=AlphaAllowGCE
-
 export KOPS_STATE_STORE=gs://my-kops-clusters-111/
 ```
 
@@ -36,12 +34,15 @@ cluster için config oluşturuyoruz öncelikle.
 kops edit ig --name=simple.k8s.local master-europe-north1-a
 ```
 
-
-ve en son cluster ı kuruyoruz
+ve en son cluster ı kuruyoruz ve 10 dakika kadar bekliyoruz.
 
 ```kops update cluster --name simple.k8s.local --state ${KOPS_STATE_STORE} --yes --admin```
+
 
 cluster kurduktan sonra kubeconfiği aşağıdaki komutlar çekeriz.
 
 ```kops export kubecfg simple.k8s.local --state ${KOPS_STATE_STORE} --admin```
 
+config çektikten sonra validate edeceğiz.
+
+```kops validate cluster --state ${KOPS_STATE_STORE}```
