@@ -39,5 +39,5 @@ ve en son cluster ı kuruyoruz
 
 cluster kurduktan sonra kubeconfiği aşağıdaki komutlar çekeriz.
 
-kops export kubecfg simple.k8s.local --state ${KOPS_STATE_STORE} --admin
+```kops export kubecfg simple.k8s.local --state ${KOPS_STATE_STORE} --admin```
 
