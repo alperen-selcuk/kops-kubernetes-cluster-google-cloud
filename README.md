@@ -1,4 +1,4 @@
-# kops-kubernetes-cluster
+# kops-kubernetes-cluster-on-google-cloud
 
 github sayfasından kops release indirilir.
 
